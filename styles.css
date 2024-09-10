@@ -1,0 +1,75 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+/* Estilo del encabezado */
+h1 {
+    position: absolute; /* Posiciona el h1 en la esquina superior izquierda */
+    top: 30px; /* Espacio desde el borde superior */
+    left: 30px; /* Espacio desde el borde izquierdo */
+    margin: 0;
+    padding: 0;
+    font-size: 32px; /* Aumenta el tamaño del encabezado */
+    color: #333;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 30px; /* Aumenta el padding para hacer el formulario más espacioso */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para destacar el formulario */
+    width: 100%;
+    max-width: 600px; /* Aumenta el ancho máximo del formulario */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    overflow-y: auto;
+}
+
+/* Estilo para etiquetas */
+label {
+    display: block;
+    margin-bottom: 15px; /* Aumenta el margen inferior para separar las etiquetas de los campos */
+    font-weight: bold;
+    font-size: 18px; /* Aumenta el tamaño de la fuente de las etiquetas */
+}
+
+/* Estilo para campos de texto */
+input[type="text"] {
+    width: calc(100% - 22px); /* Ajusta el ancho para incluir el padding */
+    padding: 15px; /* Aumenta el padding para campos más grandes */
+    margin-bottom: 15px; /* Aumenta el margen inferior entre los campos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Aumenta el tamaño de la fuente en los campos */
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 40px; /* Tamaño del botón: más alto y ancho */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano al pasar sobre el botón */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
+}
+
+/* Estilo para el botón de enviar cuando pasa el cursor sobre él */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Aumenta el tamaño del botón ligeramente */
+}
